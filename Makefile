@@ -13,7 +13,7 @@ export PATH_COMPOSE="compose"
 export PATH_DOCKER="$(PATH_COMPOSE)/docker"
 export PATH_HELM="$(PATH_COMPOSE)/helm"
 export PROJECT_NAME="container"
-export AWS_DEFAULT_REGION="us-east-1"
+export AWS_DEFAULT_REGION="ap-southeast-1"
 
 export CI_REGISTRY     ?= $(ARGS).dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com
 export CI_PROJECT_PATH ?= devopscorner
