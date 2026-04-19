@@ -29,7 +29,7 @@ env:
   # ===================================== #
   variables:
     ENV_CICD: "dev"
-    AWS_DEFAULT_REGION: "ap-southeast-1"
+    AWS_DEFAULT_REGION: "us-east-1"
     INFRA_CICD: "terraform/environment/providers/aws/infra/resources"
     INFRA_CICD_PATH: "cicd"
     INFRA_ECR_PATH: "devopscorner/cicd"
@@ -62,4 +62,4 @@ phases:
       # ========================= #
       #  Refactoring AWS Account  #
       # ========================= #
-      - cd ${CODEBUILD_SRC_DIR} && find ./ -type f -exec sed -i "s/YOUR_AWS_A
+      - cd ${CODEBUILD_SRC_D
