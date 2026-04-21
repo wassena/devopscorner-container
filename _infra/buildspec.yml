@@ -29,7 +29,8 @@ env:
   # ===================================== #
   variables:
     ENV_CICD: "dev"
-    AWS_DEFAULT_REGION: "us-east-1"
+    # Changed to ap-southeast-1 to match my personal AWS region
+    AWS_DEFAULT_REGION: "ap-southeast-1"
     INFRA_CICD: "terraform/environment/providers/aws/infra/resources"
     INFRA_CICD_PATH: "cicd"
     INFRA_ECR_PATH: "devopscorner/cicd"
